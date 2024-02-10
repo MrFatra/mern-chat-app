@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+/* :root {
+    --primary: rebeccapurple;
+    --secondary: cornflowerblue;
+} */
+
+@tailwind base;
+
+/* Firefox */
+/* * {
+    scrollbar-width: thin;
+    scrollbar-color: var(--secondary) var(--primary);
+} */
+
+/* Chrome, Edge, and Safari */
+/* *::-webkit-scrollbar {
+    width: 15px;
+    border-radius: 100px;
+}
+
+*::-webkit-scrollbar-track {
+    background: var(--primary);
+    border-radius: 10px;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: var(--secondary);
+    border-radius: 20px;
+    border: 1px solid var(--primary);
+} */
+
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+
+  /* Hide scrollbar for Chrome, Safari and Opera */
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* Hide scrollbar for IE, Edge and Firefox */
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+  }
+}
+
+/* @layer utilities {
+    .scrollbar::-webkit-scrollbar {
+      width: 8px;
+    }
+  
+    .scrollbar::-webkit-scrollbar-track {
+      border-radius: 100vh;
+      background: #f7eded13;
+    }
+  
+    .scrollbar::-webkit-scrollbar-thumb {
+      background: #2081ff5b;
+      border-radius: 100vh;
+    }
+  
+    .scrollbar::-webkit-scrollbar-thumb:hover {
+      background: #5aa2ff;
+    }
+  } */

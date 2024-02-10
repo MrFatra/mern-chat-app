@@ -1,0 +1,17 @@
+{
+  "name": "chat-app",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Realtime Chat App using MERN Stack",
+  "main": "index.js",
+  "scripts": {
+    "server": "nodemon backend/index.js",
+    "client": "cd frontend && npm run dev",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "MrFatra",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^3.0.3"
+  }
+}
