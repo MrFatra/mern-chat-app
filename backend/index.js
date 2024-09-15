@@ -8,7 +8,8 @@ import cookieParser from 'cookie-parser'
 import { app, server } from './socket.js'
 import path from 'path'
 
-dotenv.config({ path: './backend/.env' })
+// dotenv.config({ path: './backend/.env' })
+dotenv.config()
 
 const __dirname = path.resolve()
 
